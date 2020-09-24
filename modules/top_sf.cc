@@ -1,7 +1,6 @@
 #include "top_sf.h"
-#ifndef TIMBERPATH
-string TIMBERPATH = "/home/lucas/Projects/RDFanalyzer/TIMBER/TIMBER/";
-#endif
+#include <cstdlib>
+string TIMBERPATH = std::getenv("TIMBERPATH");
 
 #include "Math/Vector4Dfwd.h"
 using LVector = ROOT::Math::PtEtaPhiMVector;
